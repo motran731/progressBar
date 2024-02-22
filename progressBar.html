@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="progressBar.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Progress Bar</h1>
+    <div id="myProgress">
+      <div id="myBar"></div>
+    </div>
+    <script>
+      let dateFirst = new Date("01/01/2024");
+      let dateNow = new Date();
+      let dateEnd = new Date("12/31/2024");
+
+      let diffNowFirst = dateNow.getTime() - dateFirst.getTime();
+
+      //let diffInTime = dateEnd.getTime() - dateFirst.getTime();
+      let divideTime = dateNow.getTime() / dateEnd.getTime();
+      let diffInDays = Math.round(diffInTime / (1000 * 3600 * 24));
+    </script>
+  </body>
+</html>
