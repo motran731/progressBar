@@ -1,12 +1,23 @@
-#myProgress {
-  width: 100%;
-  background-color: black;
+h1 {
+  text-align: center;
+  color: rgb(179, 90, 179);
+  font-family: cursive;
 }
 
-#mybar {
-  height: 50px;
-  background-color: purple;
-  text-align: center;
-  line-height: 30px;
+.container {
+  border-style: double;
+}
+
+.blackbox {
+  display: flex;
+  background-color: rgb(223, 208, 208);
+}
+
+.purplebox {
+  display: flex;
+  background-color: rgb(206, 105, 139);
   color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
 }
