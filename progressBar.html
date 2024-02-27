@@ -12,15 +12,16 @@
       <div id="myBar"></div>
     </div>
     <script>
-      let dateFirst = new Date("01/01/2024");
+      let dateJan = new Date("01/01/2024");
       let dateNow = new Date();
-      let dateEnd = new Date("12/31/2024");
+      let dateDec = new Date("12/31/2024");
 
-      let diffNowFirst = dateNow.getTime() - dateFirst.getTime();
+      let diffNowJan = dateNow.getTime() - dateJan.getTime();
 
       //let diffInTime = dateEnd.getTime() - dateFirst.getTime();
-      let divideTime = dateNow.getTime() / dateEnd.getTime();
-      let diffInDays = Math.round(diffInTime / (1000 * 3600 * 24));
+      // let divideTime = dateNow.getTime() / dateDec.getTime();
+      let diffInDays = Math.round(diffNowJan / (1000 * 3600 * 24));
+      let progress = Math.round((diffInDays / 365) * 100);
     </script>
   </body>
 </html>
