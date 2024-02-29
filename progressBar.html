@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="progressBar.css" />
-    <title>Document</title>
+    <title>Progress Bar</title>
   </head>
   <body>
     <h1>Progress Bar 2024</h1>
     <div class="container">
       <div class="blackbox">
-        <div id="bar" class="purplebox" style="height: 84px"></div>
+        <div id="bar" class="purplebox" style="height: 90px"></div>
       </div>
     </div>
     <script>
@@ -20,8 +20,6 @@
 
       let diffNowJan = dateNow.getTime() - dateJan.getTime();
 
-      //let diffInTime = dateEnd.getTime() - dateFirst.getTime();
-      // let divideTime = dateNow.getTime() / dateDec.getTime();
       let diffInDays = Math.round(diffNowJan / (1000 * 3600 * 24));
       let progress = Math.round((diffInDays / 365) * 100);
       document.getElementById("bar").style.width = progress + "%";
